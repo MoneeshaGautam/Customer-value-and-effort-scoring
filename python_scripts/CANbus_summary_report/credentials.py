@@ -1,0 +1,1 @@
+connection_string = 'mongodb://CANbusUser:BaselayeR%20ProducT%20CalciuM@athena.vueconnected.com:27017/?authSource=admin&readPreference=primary&directConnection=true&ssl=false'

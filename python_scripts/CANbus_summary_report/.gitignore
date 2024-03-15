@@ -7,3 +7,14 @@
 /.streamlit/
 /.chatgpt/
 /venv
+# Ignore system and user directories
+Application Data/
+Cookies/
+Local Settings/
+My Documents/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+Start Menu/
+Templates/

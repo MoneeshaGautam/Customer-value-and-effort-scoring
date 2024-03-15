@@ -1,0 +1,9 @@
+*.csv
+*.xlsx
+/.ipynb_checkpoints/
+/.vscode/
+/.jupyter/
+/.matplotlib/
+/.streamlit/
+/.chatgpt/
+/venv

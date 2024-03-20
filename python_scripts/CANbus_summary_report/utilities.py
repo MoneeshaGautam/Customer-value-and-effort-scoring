@@ -1,4 +1,7 @@
 from datetime import datetime,timedelta
+from credentials import *
+import pyodbc as db
+import pandas as pd
 
 
 
@@ -23,3 +26,13 @@ def get_previous_day():
     return yesterday_start_time.strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
+
+def SQL_query(query):
+    try:
+        qf = db.connect(
+            "DRIVER={"+VCONNECT_DRIVER+"};PORT="+VCONNECT_PORT+";SERVER="+VCONNECT_SERVER+";DATABASE="+VCONNECT_DATABASE+";UID="+VCONNECT_USERNAME+";PWD="+VCONNECT_PASSWORD)
+        database = pd.read_sql(query, qf)
+        #print (database)
+        return database
+    except Exception as Err:
+        print(Err)

@@ -4,7 +4,7 @@ import pandas as pd
 import warnings
 from utilities import *
 #from manipulator import manipulation
-from manipulation import manipulation
+from outlier import manipulation
 from extractor import extract_data
 #%run ./credentionals.ipynb import *
 warnings.filterwarnings('ignore')
